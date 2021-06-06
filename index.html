@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="css/styles.css">
   <title>Frontend Mentor | Calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,6 +15,45 @@
   </style>
 </head>
 <body>
+  <div id="app" class="App">
+    <header class="header">
+      <h1 class="header__title">calc</h1>
+      <div class="header__options">
+        <p class="options__theme--title">THEME</p>
+        <div class="options__themes">
+          <p>1 2 3</p>
+          <div class="selector">
+            <div class="valor"></div>
+          </div>          
+        </div>
+      </div>
+    </header>
+    <main>
+      <form class="form">
+        <input type="text" id="operation" class="operation-space">
+        <div class="buttons__container">
+          <button type="button">7</button>
+          <button type="button">8</button>
+          <button type="button" >9</button>
+          <button type="button">Del</button>
+          <button type="button">4</button>
+          <button type="button">5</button>
+          <button type="button">6</button>
+          <button type="button">+</button>
+          <button type="button">1</button>
+          <button type="button">2</button>
+          <button type="button">3</button>
+          <button type="button">-</button>
+          <button type="button" >.</button>
+          <button type="button">0</button>
+          <button type="button">/</button>
+          <button type="button">x</button>
+          <button type="reset">reset</button>
+          <button type="button">=</button>
+        </div>
+      </form>
+    </main>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
